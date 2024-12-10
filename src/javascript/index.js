@@ -33,7 +33,11 @@ $(function () {
     // Evento del botón 3 : POST 
     $('#boton3').on('click', function () {
         $.post('https://my-json-server.typicode.com/desarrollo-seguro/dato/solicitudes', function (data) {
-
+            data = {
+                id: 4,   
+                nombre: 'Isabel',  
+                apellido: 'Pérez'  
+            };
             $('#text3').val('OK');
             console.log("Botón 3: Datos obtenidos ", data);
 
@@ -42,38 +46,38 @@ $(function () {
             // Mensaje de error si falla
             console.error("Error");
         });
+    });
 
+    // evento botón4: PUT
+    $('#boton4').on('click', function () {
+        $.ajax({
+            url: 'https://my-json-server.typicode.com/desarrollo-seguro/dato/solicitudes/1',
+            type: 'PUT',
+            data: { id: '1', nombre: 'Nunchy', apellido: 'Prádanos' },
 
-        // evento botón4: PUT
-        $('#boton4').on('click', function () {
+            success: function (data) {
+                $('#text4').val('OK');
+                console.log("Botón 4: Datos obtenidos :", data);
+            }
+        });
+    });
+
+        // Evento botón5: DELETE
+        $('#boton5').on('click', function () {
             $.ajax({
                 url: 'https://my-json-server.typicode.com/desarrollo-seguro/dato/solicitudes/1',
-                type: 'PUT',
-                data: { nombre: 'Nunchy', apellido: 'Prádanos' },
-
-                success: function (data) {
-                    $('#text4').val('OK');
-                    console.log("Botón 4: Datos obtenidos :", data);
-                }
-            });
-
-
-            // Evento botón4: DELETE
-            $('#boton5').on('click', function () {
-                $.ajax({
-                    url: 'https://my-json-server.typicode.com/desarrollo-seguro/dato/solicitudes/1',
-                    type: 'DELETE',
-                    success: function () {
-                        $('#text5').val('OK');
-                        console.log("Botón 5: registro eliminado");
-                    },
-                });
+                type: 'DELETE',
+                success: function () {
+                    $('#text5').val('OK');
+                    console.log("Botón 5: registro eliminado");
+                },
             });
         });
+  
 
 
 
-    });
+
 
 
 
