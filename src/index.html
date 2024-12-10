@@ -1,58 +1,166 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto 17 Nunchy</title>
+    <link rel="stylesheet" href="./css/mistyle.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 </head>
+
 <body>
     <h1>Proyecto 17</h1>
 
-     <!-- Botón 1: get -->
-    <h3> 1º: GET LISTAR</h3>  
-    
-    <button id="boton1">BOTÓN 1: GET </button>
+    <div class="row">
+        <div class="col-md-4">
+            <h3> 1º: GET LISTAR</h3>
+
+            <button id="boton1" class="btn btn-primary">BOTÓN 1: GET </button>
+            <input type="text" id="text1">
+        </div>
+        <div class="col-md-4">
+            <h3> 2º: Get con id LEER</h3>
+            <button id="boton2" class="mio">BOTÓN 2: GET id </button>
+            <input type="text" id="text2">
+            <div id="resultadoId"></div>
+        </div>
+        <div class="col-md-4">
+            <h3> 3º: Post CREAR</h3>
+            <button id="boton3">Pulsa Post</button>
+            <input type="text" id="text3">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h3> 4º: Put ACTUALIZAR</h3>
+            <button id="boton4" class="btn btn-success">Pulsa put</button>
+            <input type="text" id="text4">
+        </div>
+        <div class="col-md-6">
+            <h3> 5º: Delete BORRAR</h3>
+
+            <button id="boton5">Pulsa delete </button>
+            <input type="text" id="text5">
+        </div>
+    </div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    <!-- Botón 1: get -->
+    <h3> 1º: GET LISTAR</h3>
+
+    <button id="boton1" class="btn btn-primary">BOTÓN 1: GET </button>
     <input type="text" id="text1">
-  
 
 
 
-     <!-- Botón 2:  Get con id -->
-    <h3> 2º: Get con id LEER</h3>    
-    <button id="boton2">BOTÓN 2: GET id </button>
+
+    <!-- Botón 2:  Get con id -->
+    <h3> 2º: Get con id LEER</h3>
+    <button id="boton2" class="mio">BOTÓN 2: GET id </button>
     <input type="text" id="text2">
     <div id="resultadoId"></div>
-    
 
- <!-- Botón 3:post -->
-    <h3> 3º: Post CREAR</h3>    
+
+    <!-- Botón 3:post -->
+    <h3> 3º: Post CREAR</h3>
     <button id="boton3">Pulsa Post</button>
     <input type="text" id="text3">
-     
 
 
 
-<!-- Botón 4:put -->
-<h3> 4º: Put ACTUALIZAR</h3>    
-<button id="boton4">Pulsa put</button>
-<input type="text" id="text4">
-  
-    
+
+    <!-- Botón 4:put -->
+    <h3> 4º: Put ACTUALIZAR</h3>
+    <button id="boton4" class="btn btn-success">Pulsa put</button>
+    <input type="text" id="text4">
 
 
 
-<!-- Botón 5: :Delete -->
-<h3> 5º: Delete BORRAR</h3>
- 
-<button id="boton5">Pulsa delete </button>
-<input type="text" id="text5">
 
- 
 
+    <!-- Botón 5: :Delete -->
+    <h3> 5º: Delete BORRAR</h3>
+
+    <button id="boton5">Pulsa delete </button>
+    <input type="text" id="text5">
+
+    <hr>
+
+    <a class="btn btn-default" href="https://www.elmundo.es/" role="button">El mundo</a>
+
+    <hr>
+
+    <form>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputFile">File input</label>
+            <input type="file" id="exampleInputFile">
+            <p class="help-block">Example block-level help text here.</p>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox"> Check me out
+            </label>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+    <hr>
+
+    <div class="row">
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">.col-md-8</div>
+        <div class="col-md-4">.col-md-4</div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">.col-md-4</div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">.col-md-6</div>
+        <div class="col-md-6">.col-md-6</div>
+    </div>
 
 
     <script src="../node_modules/jquery/dist/jquery.js"></script>
     <script src="./javascript/index.js"></script>
 </body>
-</html>
 
+</html>

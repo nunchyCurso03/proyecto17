@@ -32,6 +32,8 @@ $(function () {
 
     // Evento del botón 3 : POST 
     $('#boton3').on('click', function () {
+        // le cambio el color
+        $(this).addClass('mio')
         $.post('https://my-json-server.typicode.com/desarrollo-seguro/dato/solicitudes', function (data) {
             data = {
                 id: 4,   
